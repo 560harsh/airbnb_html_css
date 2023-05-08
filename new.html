@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7c581da073.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        header{
+            display: flex;
+            height: 70px;
+            width: 100%;
+            margin: auto;
+            justify-content: space-between;
+        }
+        .imglogo{
+            margin-top: 8px;
+            height: 50px;
+        }
+        .cent{
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            align-items: center;
+            margin-left: 28%;
+            align-self: center;
+            border: 1px solid gainsboro;
+            border-radius: 30px;
+            height: 50px;
+            width: 300px;
+        }
+        .cent:hover{
+            -webkit-box-shadow: 2px 14px 46px -12px rgba(0,0,0,0.75);
+            -moz-box-shadow: 2px 14px 46px -12px rgba(0,0,0,0.75);
+            box-shadow: 2px 14px 46px -12px rgba(0,0,0,0.75);
+        }
+        .btn{
+            padding: 7px;
+            border: none;
+            background: none;
+        }
+        .btn:hover{
+            border: 1px solid gainsboro;
+            border-radius: 20px;
+            background-color: rgba(105, 105, 105, 0.137);
+        }
+        .abyh{
+            margin-top: 15px;
+            margin-left: 15%;
+        }
+        .abyhbt{
+                height: 40px;
+                width: 150px;
+                background: none;
+                border: none;
+                font-family: 'Times New Roman';
+                font-size: 18px;
+                
+        }
+        .abyhbt:hover{
+            border: 1px solid gainsboro;
+            border-radius: 20px;
+            background-color: rgba(105, 105, 105, 0.137);
+        }
+        .uni{
+            margin-left: 10px;
+            margin-top: 12px;
+        }
+        .unibt{
+            height: 50px;
+            width: 50px;
+            background: none;
+            border: none;
+        }
+        .unibt:hover{
+            background-color: rgba(105, 105, 105, 0.137);
+            border: 1px solid gainsboro;
+            border-radius: 50%;
+        }
+        .user{
+            align-items: center;
+            margin-top: 15px;
+            margin-left: 5px;
+            height: 40px;
+            width: 80px;
+            border: 1px solid gainsboro;
+            border-radius: 20px;
+            display: flex;
+            background: none;
+        }
+        .user:hover{
+            background-color: rgba(105, 105, 105, 0.137);
+        }
+        .bar{
+            margin-left: 15px;
+        }
+        .bars{
+            margin-left: 15px;
+        }
+        .types{
+            display: flex;
+            margin-top: 15px;
+            margin-left: 20px;
+            justify-content: space-between;
+        }
+        .fri{
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            margin-right: 25px;
+            height: 30px;
+            width: 30px;
+            justify-content: space-around;
+        }
+        .pa{
+            margin-left: 15px;
+            margin-right: 5px;
+            font-size: smaller;
+        }
+        .pa2{
+            margin-left: 8px;   
+            font-size: smaller;
+        }
+        .pa3{
+            margin-left: 8px;
+            font-size: smaller;
+        }
+        .pa4{
+            margin-left: 25px;
+            font-size: smaller;
+        }
+        .pa5{
+            margin-left: 8px;
+            font-size: smaller;
+        }
+        .bigim{
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            margin-right: 25px;
+            height: 30px;
+            width: 30px;
+            justify-content: space-around;
+        }
+        .bigim2{
+            display: flex;
+            flex-direction: column;
+            margin-left: 27px;
+            margin-right: 25px;
+            height: 30px;
+            width: 30px;
+            justify-content: space-around;
+        }
+        .ser{
+            display: flex;
+            padding: 5px;
+            height: 70px;
+            width: 100%;
+            justify-content: center;
+        }
+        .sear{
+            display: flex;
+            height: 50px;
+            width: 500px;
+            border: 1px solid gainsboro;
+            justify-content: space-around;
+        }
+        .dtp{
+            color: black;
+            
+        }
+        .btt{
+            border-radius: 50px;
+            margin-top: 5px;
+            height: 40px;
+            width: 90px;
+        }
+        .posts{
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 500px;
+            width: 100%;
+            
+        }
+        .post{
+            display: flex;
+            flex-direction: column;
+            column-gap: 3px;
+            
+        }
+        .ipost{
+            border-radius: 10px;
+            height: 150px;
+            min-width: 200px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="imglogo" src="abnlogo.jpg" alt="">
+        </div>
+        <div class="cent">
+                <button class="btno btn">weekend</button>&nbsp;|
+                <button class="btnt btn">weekdays</button>&nbsp;|
+                <button class="btntr btn">vacation</button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="abyh">
+            <button class="abyhbt">Airbnb your home</button>
+        </div>
+        <div class="uni">
+            <button class="unibt">
+                <i class="fa-sharp fa-solid fa-globe fa-2xl"></i>
+            </button>
+        </div>
+        <button class="user">
+            
+                <i class="bar fa-solid fa-bars fa-lg"></i>
+                <i class="bars fa-solid fa-user"></i>
+            
+        </button>
+    </header>
+
+    <div class="types">
+        <div class="ic">
+            <img class="fri" src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt="">
+            <p class="pa">Farm</p>
+        </div>
+        <div class="ic">
+            <img class="bigim" src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg" alt="">
+            <p class="pa2">Beachfort</p>
+        </div>
+        <div class="ic">
+            <img class="bigim2" src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt="">
+            <p class="pa3">Amazing view</p>
+        </div>
+        <div class="ic">
+            <img class="bigim2" src="https://a0.muscache.com/pictures/50861fca-582c-4bcc-89d3-857fb7ca6528.jpg" alt="">
+            <p class="pa4">design</p>
+        </div>
+
+        <div class="ic">
+            <img class="fri" src="https://a0.muscache.com/pictures/957f8022-dfd7-426c-99fd-77ed792f6d7a.jpg" alt="">
+            <p class="pa5">suffering</p>
+        </div>
+        <div class="ic">
+            <img class="fri" src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt="">
+            <p class="pa">Farm</p>
+        </div>
+        <div class="ic">
+            <img class="bigim" src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg" alt="">
+            <p class="pa2">Beachfort</p>
+        </div>
+        <div class="ic">
+            <img class="bigim2" src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt="">
+            <p class="pa3">Amazing view</p>
+        </div>
+        <div class="ic">
+            <img class="bigim2" src="https://a0.muscache.com/pictures/50861fca-582c-4bcc-89d3-857fb7ca6528.jpg" alt="">
+            <p class="pa4">design</p>
+        </div>
+
+        <div class="ic">
+            <img class="fri" src="https://a0.muscache.com/pictures/957f8022-dfd7-426c-99fd-77ed792f6d7a.jpg" alt="">
+            <p class="pa5">suffering</p>
+        </div>
+        <div class="ic">
+            <img class="fri" src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt="">
+            <p class="pa">Farm</p>
+        </div>
+        <div class="ic">
+            <img class="bigim" src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg" alt="">
+            <p class="pa2">Beachfort</p>
+        </div>
+        <div class="ic">
+            <img class="bigim2" src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt="">
+            <p class="pa3">Amazing view</p>
+        </div>
+        <div class="ic">
+            <img class="bigim2" src="https://a0.muscache.com/pictures/50861fca-582c-4bcc-89d3-857fb7ca6528.jpg" alt="">
+            <p class="pa4">design</p>
+        </div>
+
+        <div class="ic">
+            <img class="fri" src="https://a0.muscache.com/pictures/957f8022-dfd7-426c-99fd-77ed792f6d7a.jpg" alt="">
+            <p class="pa5">suffering</p>
+        </div>
+        <div class="ic">
+            <img class="fri" src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt="">
+            <p class="pa">Farm</p>
+        </div>
+        <div class="ic">
+            <img class="bigim" src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg" alt="">
+            <p class="pa2">Beachfort</p>
+        </div>
+        
+    </div>
+    <div class="ser">
+        <div class="sear">
+            <p class="dtp"><b>Display total price</b></p>
+            <p>|</p>
+            <p>Includes all fees, before taxes</p>
+            <button class="btt"></button>
+        </div>
+    </div>
+    <div class="posts">
+        <div class="post">
+            <img class="ipost" src="https://a0.muscache.com/im/pictures/cf65c091-2925-4a16-9fe0-f75915494f29.jpg?im_w=720" alt="">
+            <div>
+                <p style="margin-left: 10px; margin-bottom: 1%;"><b>Vagamon, India</b></p>
+                <p style="margin-left: 10px; margin-top: 0%; margin-bottom: 1%; opacity: 0.5;">1,125 kilometers away <br>5 nights, 1-6 May</p>
+                <p style="margin-left: 10px; margin-top: 0%; margin-bottom: 1%;"><b>₹2,579</b>night before taxes</p>
+                <p style="margin-bottom: 40px;"></p>
+            </div>    
+        </div>
+        <div class="post">
+            <img class="ipost" src="https://a0.muscache.com/im/pictures/cf65c091-2925-4a16-9fe0-f75915494f29.jpg?im_w=720" alt="">
+            <div>
+                <p style="margin-left: 10px; margin-bottom: 1%;"><b>Vagamon, India</b></p>
+                <p style="margin-left: 10px; margin-top: 0%; margin-bottom: 1%; opacity: 0.5;">1,125 kilometers away <br>5 nights, 1-6 May</p>
+                <p style="margin-left: 10px; margin-top: 0%; margin-bottom: 1%;"><b>₹2,579</b>night before taxes</p>
+                <p style="margin-bottom: 40px;"></p>
+            </div>
+        </div>
+        <div class="post">
+            <img class="ipost" src="https://a0.muscache.com/im/pictures/cf65c091-2925-4a16-9fe0-f75915494f29.jpg?im_w=720" alt="">
+            <div>
+                <p style="margin-left: 10px; margin-bottom: 1%;"><b>Vagamon, India</b></p>
+                <p style="margin-left: 10px; margin-top: 0%; margin-bottom: 1%; opacity: 0.5;">1,125 kilometers away <br>5 nights, 1-6 May</p>
+                <p style="margin-left: 10px; margin-top: 0%; margin-bottom: 1%;"><b>₹2,579</b>night before taxes</p>
+                <p style="margin-bottom: 40px;"></p>
+            </div>
+            
+        </div>
+        <div class="post">
+            <img class="ipost" src="https://a0.muscache.com/im/pictures/cf65c091-2925-4a16-9fe0-f75915494f29.jpg?im_w=720" alt="">
+            <div>
+                <p style="margin-left: 10px; margin-bottom: 1%;"><b>Vagamon, India</b></p>
+                <p style="margin-left: 10px; margin-top: 0%; margin-bottom: 1%; opacity: 0.5;">1,125 kilometers away <br>5 nights, 1-6 May</p>
+                <p style="margin-left: 10px; margin-top: 0%; margin-bottom: 1%;"><b>₹2,579</b>night before taxes</p>
+                <p style="margin-bottom: 40px;"></p>
+            </div>
+        </div>
+        <div class="post">
+            <img class="ipost" src="https://a0.muscache.com/im/pictures/cf65c091-2925-4a16-9fe0-f75915494f29.jpg?im_w=720" alt="">
+            <div>
+                <p style="margin-left: 10px; margin-bottom: 1%;"><b>Vagamon, India</b></p>
+                <p style="margin-left: 10px; margin-top: 0%; margin-bottom: 1%; opacity: 0.5;">1,125 kilometers away <br>5 nights, 1-6 May</p>
+                <p style="margin-left: 10px; margin-top: 0%; margin-bottom: 1%;"><b>₹2,579</b>night before taxes</p>
+                <p style="margin-bottom: 40px;"></p>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
